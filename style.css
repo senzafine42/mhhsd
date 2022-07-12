@@ -112,7 +112,7 @@ header{
 }
 .header-button{
     padding: 10px 10px !important;
-    min-width: 100px;
+    max-width: 50px;
 }
 
 
@@ -220,7 +220,6 @@ h3{
     font-style: italic;
 }
 .button {
-    /* background-color: lightgray; */
     color: #ffffff !important;
     border: 3px outset orange;
     cursor: pointer;
@@ -234,7 +233,7 @@ h3{
     text-align: center;
     transition: background-color .2s;
     text-decoration: none;
-    min-width: 220px;
+    min-width: 150px;
     background-image: linear-gradient(to right,rgb(22, 87, 172),#fa6d0f);
 }
 .button:hover{
@@ -243,7 +242,7 @@ h3{
 }
 
 .button-black{
-        background-color: #000000 !important;
+    background-color: #000000 !important;
 }
 
 .button-green{
@@ -315,7 +314,7 @@ div {
 .vidcontainer {
     width: 100%; max-width: 97%; height: 0;
     padding-bottom: 56.25%;
-    border: 5px solid #fa6d0f;
+    /* border: 5px solid #fa6d0f; */
     position: relative;
 }
 
@@ -505,6 +504,15 @@ left: 50%;
     padding-bottom: 20px;
 }
 
+
+/*--------------------weather-----------------------*/
+
+#weather{
+    padding: 30px 0px 0px 0px;
+    width: 100%;
+    float: left;
+    background-image: linear-gradient(to right,rgb(22, 87, 172),#fa6d0f);
+}
 /*--------------------Footer CSS--------------------*/
 
 
