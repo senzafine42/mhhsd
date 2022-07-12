@@ -10,7 +10,7 @@ header{
 }
 
 .header-solid{
-    background-color: #d2b48c;
+    background-color: lightgray;
 }
 
 #logo-container {
@@ -117,7 +117,7 @@ header{
 
 
 #mobile-nav-container{
-    background-color: rgba(0,0,0,0.85);
+    background-color: lightgray;
     padding: 10px 30px 25px 30px;
     display: none;
     position: fixed;
@@ -182,7 +182,9 @@ body {
     font-weight: 300;
     padding: 0px;
     margin: 0px;
+    background-color: lightgray;
 }
+
 p {
     font-family: "Open Sans", sans-serif;
 
@@ -218,9 +220,9 @@ h3{
     font-style: italic;
 }
 .button {
-    background-color: #d2b48c;
+    /* background-color: lightgray; */
     color: #ffffff !important;
-    border: none;
+    border: 3px outset orange;
     cursor: pointer;
     display: inline-block;
     font-family: "Open Sans",sans-serif !important;
@@ -233,7 +235,7 @@ h3{
     transition: background-color .2s;
     text-decoration: none;
     min-width: 220px;
-    background-image: linear-gradient(to right,rgb(0,0,0),#d2b48c);
+    background-image: linear-gradient(to right,rgb(22, 87, 172),#fa6d0f);
 }
 .button:hover{
     opacity: .85;
@@ -296,26 +298,24 @@ img {
 :focus { outline: none; }
 
 div {
-    background-color: #d2b48c;
+    background-color: lightgray;
     text-align: center;
   }
 
-img {
-    border-radius: 3%;
-    width: 90%;
-    height: auto;
-}
+  /*--------------------End Universal CSS--------------------*/
 
+  /*---------------------------Video-------------------------*/
 .vidwrapper {
     width: 100%; max-width: 1024px;
     margin: 3em auto;
+    padding-bottom: 20px;
     /* border: 5px solid red; */
   }
 
 .vidcontainer {
-    width: 100%; max-width: 100%; height: 0;
+    width: 100%; max-width: 97%; height: 0;
     padding-bottom: 56.25%;
-    border: 5px solid burlywood;
+    border: 5px solid #fa6d0f;
     position: relative;
 }
 
@@ -324,81 +324,63 @@ img {
     position: absolute; top: 0; left: 0;
   }
 
-/*--------------------End Universal CSS--------------------*/
+  /*-----------------------End Video-------------------------*/
 
-  /*Agenda Section CSS*/
+  /*---------------------Registration------------------------*/
+  
+  #registration{
+    padding: 8px 8px 8px 8px;
+    width: 100%; max-width: 390px;
+    margin: auto;
+  }
+
+  .reg{
+    width: 100%; max-width: 388px;
+    height: 90%;
+    margin: 3em auto;
+  }
+  /*-------------------End Registration----------------------*/
+
+  /*------------------Agenda Section CSS---------------------*/
 
 #agenda{
-    padding: 30px 0px;
-    width: 100%;
-    float: left;
-    background-color: #a32626;
+    width:100%; max-width: 390px;
+    margin: auto;
+}
+.agenda-wrapper{
+    width: 98%; max-width: 390px;
+    margin: auto;
+}
+.agenda-container{
+    width: 98%; max-width: 390px;
+    height: auto;
+  }
+.agenda-item-1{
+    font-size: medium;
     text-align: center;
+    width:90%;
 }
 
-.agenda-marker{
-    border: 4px solid #14A5E9;
-    border-radius: 50%;
-    position: absolute;
-    top: calc(50% - 9px);
-    left: calc(33% - 13px);
-    width: 26px;
-    height: 26px;
-}
-
-.agenda-line-solid {
-    border-left: 4px solid #14A5E9 !important;
-    position: absolute;
-    top: calc(60% + 15px);
-    left: calc(33% + 1px);
-    background-color: #fff;
-    width: 4px;
-    height: 82px;
-}
-
-.agenda-line-dashed {
-    border-left: 4px dashed #14A5E9 !important;
-    position: absolute;
-    top: calc(50% + 35px);
-    left: calc(33% - 2px);
-    background-color: #fff;
-    width: 4px;
-    height: 82px;
-}
-
-.agenda-item{
-    position:relative;
-    padding: 2em 0;
-}
-
-.agenda-text{
-    font-size: 1.2rem;
-}
-
-.agenda-time{
-    position: absolute;
-    top: calc(50% - .5em);
-    left: 0;
-    text-align: right;
-    padding-right: 2.5em;
-    width: 30%;
-}
-
-.agenda-detail{
-    position: absolute;
-    top: calc(50% - .5em);
-    right: 0;
+.agenda-item-2{
+    font-size: medium;
     text-align: left;
-    padding-left: 1.5em;
-    width: 60%;
-
+    text-indent: 10%;
+    width:90%;
+}
+.agenda-item-3{
+    font-size: medium;
+    text-align: left;
+    text-indent: 20%;
+    width:90%;
 }
 
 .agenda-day{
     text-transform: uppercase;
+    text-indent: 50%;
     font-weight: 700;
-    text-align: center;
-    width: 55%;
+    font-size: large;
+    text-align: justify;
+    width:70%;
 }
 
 .agenda-header{
@@ -500,36 +482,37 @@ left: 50%;
 
 /*Offer Section CSS*/
 #offer{
-    padding: 30px 0px;
+    padding: 30px 0px 30px 0px;
     width: 100%;
     float: left;
-    background-image: linear-gradient(to right,rgb(0 , 0, 0),#d2b48c);
+    background-image: linear-gradient(to right,rgb(22, 87, 172),#fa6d0f);
 }
 .offer {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .offer-description {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .offer-image{
-    height: 150px;
+    height: 250px;
     width: auto;
 }
 
 .offer-text{
     color: #ffffff;
     font-size: 1.2rem;
+    padding-bottom: 20px;
 }
 
 /*--------------------Footer CSS--------------------*/
 
 
 footer{
-    background-image: linear-gradient(to right,rgb(0,0,0),#d2b48c);
+    background-color: lightgray;
 }
 .footer-container{
-    margin: 60px 0px 30px 0px;
+    margin: 10px 0px 10px 0px;
     float: left;
     width: 100%;
     color: #ffffff;
@@ -537,10 +520,10 @@ footer{
     text-align: center;
 }
 .social-buttons{
-    margin: 0 0 60px 0;
+    margin: 0 0 6px 0;
 }
 .social-buttons img {
-    width: 28px;
+    width: 100px;
     height: auto;
     margin: 0 8px 0 8px;
 }
