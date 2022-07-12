@@ -50,7 +50,7 @@ header{
 }
 #site-nav li{
     display: inline-block;
-    list-sytle-type: none;
+    /* list-sytle-type: none; */
 }
 #site-nav .last{
     padding-right: 19px;
@@ -90,7 +90,7 @@ header{
 }
 #action-nav li{
     display: inline-block;
-    list-sytle-type: none;
+    /* list-sytle-type: none; */
 }
 #action-nav li a{
     font-weight: 700;
@@ -132,7 +132,7 @@ header{
 }
 #mobile-nav li{
     display: block;
-    list-sytle-type: none;
+    /* list-sytle-type: none; */
 }
 #mobile-nav li a{
     color: #ffffff;
