@@ -10,7 +10,7 @@ header{
 }
 
 .header-solid{
-    background-color: lightgray;
+    background-color: gray;
 }
 
 #logo-container {
@@ -117,7 +117,7 @@ header{
 
 
 #mobile-nav-container{
-    background-color: lightgray;
+    background-color: gray;
     padding: 10px 30px 25px 30px;
     display: none;
     position: fixed;
@@ -182,7 +182,7 @@ body {
     font-weight: 300;
     padding: 0px;
     margin: 0px;
-    background-color: lightgray;
+    background-color: gray;
 }
 
 p {
@@ -297,9 +297,51 @@ img {
 :focus { outline: none; }
 
 div {
-    background-color: lightgray;
+    background-color: gray;
     text-align: center;
   }
+
+.highlight-blue {
+border-radius: 1em 0 1em 0;
+background-image: linear-gradient(
+    -100deg,
+    rgba(0, 20, 255, 0.2),
+    rgba(0, 20, 255, 0.7) 95%,
+    rgba(0, 20, 255, 0.1)
+);
+}
+
+.highlight-red {
+    border-radius: 1em 0 1em 0;
+    background-image: linear-gradient(
+      -100deg,
+      rgba(255, 20, 0, 0.2),
+      rgba(255, 20, 0, 0.7) 95%,
+      rgba(255, 20, 0, 0.1)
+    );
+  }
+  
+.highlight-yellow {
+border-radius: 1em 0 1em 0;
+background-image: linear-gradient(
+    -100deg,
+    rgba(255, 224, 0, 0.2),
+    rgba(255, 224, 0, 0.7) 95%,
+    rgba(255, 224, 0, 0.1)
+);
+}
+
+.highlight-green {
+border-radius: 1em 0 1em 0;
+background-image: linear-gradient(
+    -100deg,
+    rgba(0, 255, 20, 0.2),
+    rgba(0, 255, 20, 0.7) 95%,
+    rgba(0, 255, 20, 0.1)
+);
+}
+
+
 
   /*--------------------End Universal CSS--------------------*/
 
@@ -517,7 +559,7 @@ left: 50%;
 
 
 footer{
-    background-color: lightgray;
+    background-color: gray;
 }
 .footer-container{
     margin: 10px 0px 10px 0px;
