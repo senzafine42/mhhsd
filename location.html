@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
       <!-- Google tag (gtag.js) -->
@@ -16,21 +14,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700" rel="stylesheet">
   </head>
-<body>
+
+  <body>
     <div id="mobile-nav-container">
-        <div id="mobile-header-button-container">
-            <a class="button mobile-header-button" data-toggle="modal" href="/index.html">Main Page</a>
-            <a class="button mobile-header-button" data-toggle="modal" href="/register.html">Register</a>
-        </div>
+      <ul id="mobile-nav">
+          <li><a class="button mobile-header-button" data-toggle="modal" href="/index.html">Main Page</a></li>
+          <li><a class="button mobile-header-button" data-toggle="modal" href="#register">Register</a></li>
+      </ul>
     </div>
+
     <header>
         <div class="container">
             <div id="main-nav-container">
                 <div id="site-nav-container">
                     <ul id="site-nav">
                       <li><a class="button header-button" data-toggle="modal" href="/index.html">Main Page</a></li>
-                      <li><a class="button header-button" data-toggle="modal" href="/register.html">Register</a></li>
+                      <li><a class="button mobile-header-button" data-toggle="modal" href="#register">Register</a></li>
                     </ul>
                 </div>
                 <div id="action-nav-container">
@@ -50,7 +54,8 @@
     <div class="container-fluid no-padding contact-container">
         <div class="container-fluid contact-content">
             <div class="container">
-                <div class="col-xs-12 col-sm-12 col-md-8"><h2>FIELD LOCATION</h2></div><div class="col-xs-12 col-sm-12 col-md-4"></div>
+              <div><span style="vertical-align: -60px;">------------------------------------</span></div>
+              <div class="col-xs-12 col-sm-12 col-md-8"><h2>FIELD LOCATION</h2></div><div class="col-xs-12 col-sm-12 col-md-4"></div>
             </div>
         </div>
     </div>
@@ -65,8 +70,8 @@
             <div class="container">
                 <div class="col-md-6 col-md-offset-3">
                   <iframe
-                    width="800"
-                    height="550"
+                    width="390"
+                    height="390"
                     style="border:5px"
                     loading="lazy"
                     allowfullscreen
@@ -87,14 +92,14 @@
               </div>
               <div class="col-md-4 offer">
                 <div class="offer-text" style="color: #000000">
-                  <img class="offer-image" src="img/longmont_field.jpg" alt="Longmont Field">
+                  <img class="offer-image" src="img/camping.jpg" alt="Longmont Field">
                   <h2 class="analytics-summit-text">RV Camping on Site</h2>
                   <p class="offer-description">Make sure to get the full fun fly experience. Stay where the action is happening.</p>
                 </div>
               </div>
               <div class="col-md-4 offer">
                <div class="offer-text" style="color: #000000">
-                <img class="offer-image" src="img/longmont_field.jpg" alt="Longmont Field">
+                <img class="offer-image" src="img/aerial_lama.jpg" alt="Longmont Field">
                 <h2 class="analytics-summit-text">Hotels 10 Minutes Away</h2>
                 <p class="offer-description">If you need your creature comforts, there's hotels and dining within 10 minutes of the field.</p>
               </div>
@@ -107,8 +112,10 @@
           <h2>Register today! Only $30 landing fee.</h2>
         </div>
 
-        <div class="main-container text-center text-white">
-          <a class="button main-button" data-toggle="modal" data-target="#register">Register</a>
+        <div id="registration">
+          <div class="reg">
+              <a class="button main-button" data-toggle="modal" data-target="#register">Register</a>
+          </div>
         </div>
 
         <div>
@@ -124,6 +131,62 @@
                   </div>
           </footer>
         </div>
+
+    <!-- Register Modal -->
+    <div id="register" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Register for Mile High Heli Showdown</h2>
+              <p>Experience three action-packed days of flying, friends, and fun. Hang out with all your heli friends you've been missing!</p>
+              <p>AMA membership is required to fly.</p>
+          </div>
+          <div class="modal-body">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  
+              <!-- Identify your business so that you can collect the payments. -->
+              <input type="hidden" name="business" value="milehighhelishowdown@gmail.com">
+  
+              <!-- Specify a Buy Now button. -->
+              <input type="hidden" name="cmd" value="_xclick">
+  
+              <!-- Specify details about the item that buyers will purchase. -->
+              <input type="hidden" name="item_name" value="Design">
+              <input type="hidden" name="currency_code" value="USD">
+  
+              <!-- Provide a drop-down menu option field with prices. -->
+              <input type="hidden" name="on0" value="Design">Mile High Heli Showdown option<br />
+              <select name="os1">
+                  <!-- <option value="2cents">My 2 Cents - $0.02 USD</option> -->
+                  <option value="mhhsd">Mile High Heli Showdown - $30.00 USD</option>
+              </select> <br />
+  
+              <!-- Specify the price that PayPal uses for each option. -->
+              <input type="hidden" name="option_index" value="1">
+              <!-- <input type="hidden" name="option_select0" value="2cents">
+              <input type="hidden" name="option_amount0" value="00.02"> -->
+              <input type="hidden" name="option_select1" value="mhhsd">
+              <input type="hidden" name="option_amount1" value="30.00">
+  
+              <!-- Display the payment button. -->
+              <input type="image" name="submit"
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+                  alt="Buy Now">
+              <img alt="PayPal"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+  
+              </form>
+  
+          </div>
+          <div class="modal-footer">
+              <img src="img/paypal-logo-129.svg" width="129px" height="32" alt="Pay with PayPal">
+          </div>
+          </div>
+      </div>
+      </div>
+
 
              <script>
                 /* Section Header - Sticky Header */
