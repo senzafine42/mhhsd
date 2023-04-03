@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Mile High Heli Showdown | RC Helicopter Funfly</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700" rel="stylesheet">
+        <style>
+
+ 
+
+
+            /*--------------------Home Page CSS--------------------*/
+            /*main Section CSS*/
+            .main-background{
+                background: url("/images/arvada_p380.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .main-gradient{
+                background: rgba(0,0,0,0.5);
+
+            }
+            .main-container {
+                padding: 120px 0px 100px 0px;
+                font-size: 1rem;
+                width: 360px;
+                margin: 0 auto;
+            }
+            @media (min-width:768px) {
+                .main-container {
+                    padding: 240px 0px 200px 0px;
+                }
+            }
+
+            .main-description-container{
+                margin: 0px 0px 30px 0px;
+            }
+
+
+            .main-bottom-text{
+                text-transform: uppercase;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 700;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                color: #ffffff;
+                text-align: center;
+                text-justify: auto;
+
+            }
+
+            .main-bottom-text:after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+            }
+
+
+            .main-button {
+                margin-top: -3.2rem;
+                width: 100%;
+            }
+
+
+
+
+            /*Agenda Section CSS*/
+
+            #agenda{
+                padding: 30px 0px;
+                width: 100%;
+                float: left;
+                background-color: #efefef;
+                text-align: center;
+            }
+
+            .agenda-marker{
+                border: 4px solid #14A5E9;
+                border-radius: 50%;
+                position: absolute;
+                top: calc(50% - 9px);
+                left: calc(33% - 13px);
+                width: 26px;
+                height: 26px;
+            }
+
+            .agenda-line-solid {
+               border-left: 4px solid #14A5E9 !important;
+                position: absolute;
+                top: calc(50% + 15px);
+                left: calc(33% - 2px);
+                background-color: #fff;
+                width: 4px;
+                height: 55px;
+            }
+
+            .agenda-line-dashed {
+                border-left: 4px dashed #14A5E9 !important;
+                position: absolute;
+                top: calc(50% + 15px);
+                left: calc(33% - 2px);
+                background-color: #fff;
+                width: 4px;
+                height: 82px;
+            }
+
+            .agenda-item{
+                position: relative;
+                padding: 2em 0;
+            }
+
+            .agenda-text{
+                font-size: 1.2rem;
+            }
+
+            .agenda-time{
+                position: absolute;
+                top: calc(50% - .5em);
+                left: 0;
+                text-align: right;
+                padding-right: 2.5em;
+                width: 35%;
+            }
+
+            .agenda-detail{
+                position: absolute;
+                top: calc(50% - .5em);
+                right: 0;
+                text-align: left;
+                padding-left: 1.5em;
+                width: 65%;
+
+            }
+
+            .agenda-day{
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .agenda-header{
+                font-size: 2rem;
+            }
+
+            .vidwrapper {
+              width: 100%; max-width: 1024px;
+              margin: 3em auto;
+              /* border: 5px solid red; */
+            }
+
+            .vidcontainer {
+              width: 100%; max-width: 100%; height: 0;
+              padding-bottom: 56.25%;
+              /* border: 5px solid green; */
+              position: relative;
+            }
+
+            .vidcontainer iframe {
+              width: 100%; max-width: 100%; height: 100%;
+              position: absolute; top: 0; left: 0;
+            }
+
+            /*--------------------End Home Page CSS--------------------*/
+
+            /*--------------------About Page CSS--------------------*/
+            #leadership .container{
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+            .officer-title{
+                font-size: 1rem;
+            }
+
+            .leader-block{
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .leader-block img{
+                width: 100%;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+
+            .leader-block img:hover{
+                width: 100%;
+                -webkit-filter: none;
+                filter: none;
+            }
+
+            .leader-text{
+                background-color: #14A5E9;
+                padding: 6px 10px;
+                bottom: 75px;
+                margin-bottom: -75px;
+                opacity: .80;
+                height: 75px;
+            }
+
+             .leader-text h2{
+                margin-top: 5px;
+                margin-bottom: 5px;
+
+            }
+
+
+
+            /*--------------------End About Page CSS--------------------*/
+
+            /*--------------------Contact Page CSS--------------------*/
+            #contact .container{
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+
+            /*--------------------End Contact Page CSS--------------------*/
+
+             /*--------------------Field Location Page CSS--------------------*/
+            #field-location .container{
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+            .other-flying-sites{
+                border-top: 1px solid #e5e5e5;
+            }
+
+
+
+            /*--------------------End Field Location Page CSS--------------------*/
+
+
+
+
+
+        </style>
+</head>
+<body>
+    <div id="mobile-nav-container">
+        <ul id="mobile-nav">
+             <!-- <li>
+                <a id="mobile-agenda" href="/#agenda-link">Agenda</a>
+            </li> -->
+            <li>
+                <a class="button mobile-header-button" data-toggle="modal" href="/field-location.html">Location</a>
+            </li>
+        </ul>
+        <div id="mobile-header-button-container">
+            <a class="button mobile-header-button" data-toggle="modal" data-target="#register">Register</a>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div id="main-nav-container">
+              <div id="site-nav-container">
+                <ul id="site-nav">
+                  <li>
+                   <a class="button header-button" data-toggle="modal" href="/field-location.html">Location</a>
+                  </li>
+                  <li>
+                    <a class="button header-button" data-toggle="modal" href="/contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a class="button header-button" data-toggle="modal" data-target="#register">Register</a>
+                  </li>
+                </ul>
+
+                </div>
+                <div id="action-nav-container">
+                    <div id="hamburger-button" class="hamburger-icons">
+                        <div id="hamburger-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <div class="main-background">
+            <div class="main-gradient">
+                <div class="container">
+                    <div class="main-container text-center text-white">
+                        <!-- <div class="main-bottom-text">Register today! Only $30 Free hat to all pre registered Pilots!</div> -->
+                        <div class="container-fluid no-padding">
+                        <!-- <a class="button main-button" data-toggle="modal" data-target="#register">Register</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid no-padding contact-container">
+        <div class="container-fluid no-padding contact-content">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-8"><h3>Register today! Only $30 Free hat to all pre registered Pilots!</h3></div><div class="col-xs-12 col-sm-12 col-md-4"></div>
+            </div>
+        </div>
+    </div>
+
+<br>
+    <div id="container">
+    <br>
+    <center>
+      <!-- <h1> Mile High Heli Showdown 2021 </h1>
+      <h2> September 10,11,12 2021 </h2>
+      <h3> Longmont, Colorado </h3> -->
+      <a href="/">
+          <img src="/images/2021_ph.png" width="800px">
+      </a>
+    </center>
+        <div class="vidwrapper">
+          <div class="vidcontainer">
+            <iframe src="https://www.youtube.com/embed/-NyY1ceItNA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+
+        <div id="offer">
+            <span class="anchor" id="offer-link"></span>
+            <div class="container">
+                <div class="offer-container">
+                     <div class="col-xs-12 col-sm-12 col-md-4 offer" id="offer-3">
+                        <div class="offer-text">
+                            <img class="offer-image" src="/images/competitors.jpg">
+                            <h2>Competition</h2>
+                            <p class="offer-description"> Compete in the Precision Aerobatics Competition</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 offer" id="offer-2">
+                        <div class="offer-text">
+                            <img class="offer-image" src="/images/auto.jpg">
+                            <h2>Auto Contest</h2>
+                            <p class="offer-description"> Enter or watch the Auto Contest fun! </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 offer" id="offer-1">
+                        <div class="offer-text">
+                            <img class="offer-image" src="/images/nite.jpg">
+                            <h2>Night Flying</h2>
+                            <p class="offer-description">Fly under the spot lights!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="agenda" >
+            <span class="anchor" id="agenda-link"></span>
+            <div class="container">
+                <div class="agenda-container">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 agenda-text">
+                        <h2 class="text-center agenda-header">Agenda</h2>
+                        <div>
+                            <div class="agenda-day">Friday</div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><div class="agenda-line-solid"></div><span class="agenda-time">All Day</span><span class="agenda-detail">Open Flying</span></div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><div class="agenda-line-dashed"></div><span class="agenda-time">9:00 PM</span><span class="agenda-detail">Night Flying with Lights</span></div>
+                        </div>
+                        <div>
+                            <div class="agenda-day">Saturday</div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><div class="agenda-line-solid"></div><span class="agenda-time">9:00 AM</span><span class="agenda-detail">Pilots Meeting & Open Flying</span></div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><div class="agenda-line-solid"></div><span class="agenda-time">11:00 AM</span><span class="agenda-detail">Precision Aerobatic Competition</span></div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><div class="agenda-line-solid"></div><span class="agenda-time">12:00 PM</span><span class="agenda-detail">Who knows?</span></div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><div class="agenda-line-solid"></div><span class="agenda-time">2:00 PM</span><span class="agenda-detail">Auto Competition</span></div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><div class="agenda-line-dashed"></div><span class="agenda-time">8:00 PM</span><span class="agenda-detail">Night Flying with Lights</span></div>
+                        </div>
+                        <div>
+                            <div class="agenda-day">Sunday</div>
+                            <div class="agenda-item"><div class="agenda-marker"></div><span class="agenda-time">All Day</span><span class="agenda-detail">Open Flying</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+          <p><h2>Register today! Only $30 landing fee. Free hat to all pre registered Pilots!</h2></p>
+
+        <div class="main-container text-center text-white">
+          <a class="button main-button" data-toggle="modal" data-target="#register">Register</a>
+        </div>
+
+    <div style="width: 100%;">
+        <iframe style="display: block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=132280" width="100%" height="120" frameborder="0" scrolling="no">
+        </iframe><a style="width: 20px;z-index: 1;position: relative;height: 120px;margin: -92px 0 0 0;text-indent: -9999em;float: right" href="https://www.willyweather.com/co/weld-county/dacono.html" rel="nofollow">weather</a>
+    </div>
+
+
+    <footer class="container-fluid no-padding">
+            <div class="container-fluid no-padding footer-container">
+                <div class="container">
+                    <div class="social-buttons">
+                        <h2>Check us out on Facebook</h2>
+                        <a href="https://www.facebook.com/groups/milehighhelishowdown/"><img src="/images/facebook-36.png"></a>
+                    </div>
+                    Copyright © 2021 Mile High Heli Showdown
+                </div>
+            </div>
+    </footer>
+
+<!-- Register Modal -->
+<div id="register" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title">Register for Mile High Heli Showdown</h2>
+        <p>Experience three action-packed days of flying, friends, and fun. Hang out with all your heli friends you've been missing!</p>
+        <p>AMA membership is required to fly.</p>
+      </div>
+      <div class="modal-body">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+          <!-- Identify your business so that you can collect the payments. -->
+          <input type="hidden" name="business" value="milehighhelishowdown@gmail.com">
+
+          <!-- Specify a Buy Now button. -->
+          <input type="hidden" name="cmd" value="_xclick">
+
+          <!-- Specify details about the item that buyers will purchase. -->
+          <input type="hidden" name="item_name" value="Design">
+          <input type="hidden" name="currency_code" value="USD">
+
+          <!-- Provide a drop-down menu option field with prices. -->
+          <input type="hidden" name="on0" value="Design">Mile High Heli Showdown option<br />
+          <select name="os1">
+            <!-- <option value="2cents">My 2 Cents - $0.02 USD</option> -->
+            <option value="mhhsd">Mile High Heli Showdown - $30.00 USD</option>
+          </select> <br />
+
+          <!-- Specify the price that PayPal uses for each option. -->
+          <input type="hidden" name="option_index" value="1">
+          <!-- <input type="hidden" name="option_select0" value="2cents">
+          <input type="hidden" name="option_amount0" value="00.02"> -->
+          <input type="hidden" name="option_select1" value="mhhsd">
+          <input type="hidden" name="option_amount1" value="30.00">
+
+          <!-- Display the payment button. -->
+          <input type="image" name="submit" border="0"
+            src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+            alt="Buy Now">
+          <img alt="" border="0" width="1" height="1"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <img src="/images/paypal-logo-129.svg" width="129px" height="32" alt="Pay with PayPal">
+      </div>
+    </div>
+  </div>
+</div>
+
+        <script>
+            /* Section Header - Sticky Header */
+            $(document).ready(function(){
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $("header").addClass("header-solid");
+                        } else {
+                        $("header").removeClass("header-solid");
+                        }
+                });
+            });
+
+
+            /* Hamburger Menu */
+            $(document).ready(function(){
+                $('#hamburger-toggle').click(function(){
+                    $(this).toggleClass('open');
+                    $("#mobile-nav-container").toggle();
+                });
+                $('#mobile-why-attend').click(function(){
+                    $(this).toggleClass('open');
+                    $("#mobile-nav-container").toggle();
+                });
+                $('#mobile-agenda').click(function(){
+                    $(this).toggleClass('open');
+                    $("#mobile-nav-container").toggle();
+                });
+
+
+            });
+
+        </script>
+    </body>
+</html>
